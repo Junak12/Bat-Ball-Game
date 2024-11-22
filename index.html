@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id = "id3">
+        <h1 id = "id1">Bat Ball Stump</h1>
+        <button class = "id2" onclick="
+        alert('You choose to Bat');
+        let val = Math.random() * 3;
+        let res = '';
+        if (val >= 0 && val < 1) {
+            res = 'Bat';
+        }
+        else if (val >= 1 && val < 2) {
+            res = 'Ball';
+        }
+        else {
+            res = 'Stump';
+        }
+        alert(`Computer chose: ${res}`);
+        if ('Bat' == res) {
+            alert('Match Tie!');
+        }
+        else if (res == 'Ball') {
+            alert('You won!');
+        }
+        else {
+            alert('Computer Won!');
+        }
+        "
+        >Bat</button>
+        <button class = "id2" onclick="
+        alert('You choose to Ball');
+        val = Math.random() * 3;
+         res = '';
+        if (val >= 0 && val < 1) {
+            res = 'Bat';
+        }
+        else if (val >= 1 && val < 2) {
+            res = 'Ball';
+        }
+        else {
+            res = 'Stump';
+        }
+        alert(`Computer chose: ${res}`);
+        if ('Ball' == res) {
+            alert('Match Tie!');
+        }
+        else if (res == 'Stump') {
+            alert('You won!');
+        }
+        else {
+            alert('Computer won!');
+        }
+        ">Ball</button>
+        <button class = "id2"  onclick="
+        alert('You choose to Stump');
+        val = Math.random() * 3;
+         res = '';
+        if (val >= 0 && val < 1) {
+            res = 'Bat';
+        }
+        else if (val >= 1 && val < 2) {
+            res = 'Ball';
+        }
+        else {
+            res = 'Stump';
+        }
+        alert(`Computer chose: ${res}`);
+        if ('Stump' == res) {
+            alert('Match Tie!');
+        }
+        else if (res == 'Ball') {
+            alert('You won!');
+        }
+        else {
+            alert('Computer won!');
+        }
+        ">Stump</button>
+    </main>
+    <script src="1st.js"></script>
+</body>
+</html>
